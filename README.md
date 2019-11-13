@@ -2,7 +2,7 @@
 
 ## Usage
 
-`store.js`
+### store.js
 
 ```javascript
 import connectTo from "hyper-unistore";
@@ -18,7 +18,7 @@ export const connect = connectTo(store);
 
 ```
 
-`app.js`
+### app.js
 
 ```javascript
 import { connect } from "./store";
@@ -38,7 +38,7 @@ export const App = connect(mapStateToProps)(
 );
 ```
 
-`index.js`
+### index.js
 
 ```javascript
 import { render } from "lighterhtml";
