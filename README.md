@@ -32,10 +32,7 @@ export const App = connect(mapStateToProps)(
   ({ myList }) => html`
     <ul>
       ${myList.map(
-        item =>
-          html`
-            <li>${item.id} - ${item.text}</li>
-          `
+        item => html`<li>${item.id} - ${item.text}</li>`
       )}
     </ul>
   `
