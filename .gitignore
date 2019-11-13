@@ -1,0 +1,15 @@
+build
+dist
+lib
+node_modules
+package-lock.json
+*.less.d.ts
+*.lock
+*.log
+.cache
+.env
+.idea
+.rts2_cache_cjs
+.rts2_cache_es
+.rts2_cache_umd
+.vscode

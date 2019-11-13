@@ -1,0 +1,28 @@
+{
+  "name": "hyper-unistore",
+  "version": "0.0.1",
+  "description": "A unistore connector to hyperhtml/lighterhtml",
+  "author": "Djalma Jr. <djalmajr@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "source": "src/index.js",
+  "files": [
+    "dist/"
+  ],
+  "keywords": [
+    "hyperhtml",
+    "lighterhtml",
+    "unistore"
+  ],
+  "scripts": {
+    "build": "microbundle",
+    "version": "npm run build"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0",
+    "unistore": "^3.5.1"
+  }
+}
