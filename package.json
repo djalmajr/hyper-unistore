@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "build": "microbundle",
-    "version": "npm run build && git push && git push --tags"
+    "version": "npm run build && git push && git push --tags && npm publish"
   },
   "devDependencies": {
     "microbundle": "^0.11.0",
