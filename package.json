@@ -1,6 +1,6 @@
 {
   "name": "hyper-unistore",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A unistore connector to hyperhtml/lighterhtml",
   "author": "Djalma Jr. <djalmajr@gmail.com>",
   "license": "MIT",
