@@ -1,7 +1,7 @@
 {
   "name": "hyper-unistore",
   "version": "0.1.0",
-  "description": "A unistore connector to hyperhtml/lighterhtml",
+  "description": "A unistore connector to hyperhtml",
   "author": "Djalma Jr. <djalmajr@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",

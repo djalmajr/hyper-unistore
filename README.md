@@ -1,6 +1,10 @@
 # hyper-unistore
 
-A unistore connector to hyperhtml/lighterhtml
+A [unistore](https://github.com/developit/unistore) connector to [hyperhtml](https://github.com/WebReflection/hyperhtml).
+
+## Examples
+
+- [TodoNever](https://codesandbox.io/s/todonever-13y11xkrkj) - A [TodoMVC](http://todomvc.com/) app using [neverland](https://github.com/WebReflection/neverland).
 
 ## Usage
 
@@ -32,7 +36,10 @@ export const App = connect(mapStateToProps)(
   ({ myList }) => html`
     <ul>
       ${myList.map(
-        item => html`<li>${item.id} - ${item.text}</li>`
+        item =>
+          html`
+            <li>${item.id} - ${item.text}</li>
+          `
       )}
     </ul>
   `
