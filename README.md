@@ -4,7 +4,8 @@ A [unistore](https://github.com/developit/unistore) connector to [hyperhtml](htt
 
 ## Examples
 
-- [TodoNever](https://codesandbox.io/s/todonever-13y11xkrkj) - A [TodoMVC](http://todomvc.com/) app using [neverland](https://github.com/WebReflection/neverland).
+- [Todo](https://codesandbox.io/s/todonever-13y11xkrkj) - A [TodoMVC](http://todomvc.com/) app using [neverland](https://github.com/WebReflection/neverland).
+- [Tunes](https://codesandbox.io/s/5zlnjwyz8l) - A Peepcode's Backbone.js Music Player reimplemented in [lighterhtml](https://github.com/WebReflection/lighterhtml).
 
 ## Usage
 
