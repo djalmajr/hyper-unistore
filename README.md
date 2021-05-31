@@ -1,6 +1,6 @@
-# unistore-hyper
+# unistore-lit
 
-A [unistore](https://github.com/developit/unistore) connector to [hyperhtml](https://github.com/WebReflection/hyperhtml) and [lit-html](https://github.com/polymer/lit-html).
+[unistore](https://github.com/developit/unistore) connector to [lit](https://lit.dev/) and [uhtml](https://github.com/WebReflection/hyperhtml) (and any tagged template library).
 
 ## Examples
 
@@ -13,7 +13,8 @@ A [unistore](https://github.com/developit/unistore) connector to [hyperhtml](htt
 #### store.js
 
 ```javascript
-import connectTo from 'unistore-hyper';
+import createStore from 'unistore';
+import connectTo from 'unistore-lit';
 
 export const store = createStore({
   list: [
@@ -30,16 +31,14 @@ export const connect = connectTo(store);
 ```javascript
 import { connect } from './store';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   myList: state.list,
 });
 
 export const App = connect(mapStateToProps)(
   ({ myList }) => html`
     <ul>
-      ${myList.map(
-        item => html`<li>${item.id} - ${item.text}</li>`
-      )}
+      ${myList.map((item) => html`<li>${item.id} - ${item.text}</li>`)}
     </ul>
   `
 );
@@ -48,11 +47,11 @@ export const App = connect(mapStateToProps)(
 #### index.js
 
 ```javascript
-import { render } from 'lighterhtml'; // or 'lit-html'
+import { render } from 'lit'; // or 'uhtml'
 import { store } from './store';
 import { App } from './app';
 
-const renderApp = () => render(document.body, App);
+const renderApp = () => render(App(), document.body);
 
 renderApp() && store.subscribe(renderApp);
 ```

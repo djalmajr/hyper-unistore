@@ -1,7 +1,7 @@
 {
-  "name": "unistore-hyper",
+  "name": "unistore-lit",
   "version": "0.1.0",
-  "description": "A unistore connector to hyperhtml/lit-html",
+  "description": "Unistore connector to lit",
   "author": "Djalma Jr. <djalmajr@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
@@ -15,7 +15,9 @@
   "keywords": [
     "hyperhtml",
     "lighterhtml",
+    "lit",
     "lit-html",
+    "uhtml",
     "unistore"
   ],
   "scripts": {
@@ -23,7 +25,7 @@
     "version": "npm run build && git push && git push --tags && npm publish"
   },
   "devDependencies": {
-    "microbundle": "^0.11.0",
-    "unistore": "^3.5.1"
+    "microbundle": "^0.13.1",
+    "unistore": "^3.5.2"
   }
 }
